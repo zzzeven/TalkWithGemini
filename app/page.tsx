@@ -589,14 +589,14 @@ export default function Home() {
         </div>
       </div>
       {messageStore.messages.length === 0 && content === '' && messageStore.systemInstruction === '' ? (
-        <AssistantRecommend initAssistant={initAssistant} />
-      ) : (
-        <div className="flex min-h-full flex-1 grow flex-col justify-start">
-          {messageStore.systemInstruction !== '' ? (
-            <div className="p-4 pt-0">
-              <SystemInstruction prompt={messageStore.systemInstruction} onClear={() => initAssistant('')} />
-            </div>
-          ) : null}
+      //   <AssistantRecommend initAssistant={initAssistant} />
+      // ) : (
+      //   <div className="flex min-h-full flex-1 grow flex-col justify-start">
+      //     {messageStore.systemInstruction !== '' ? (
+      //       <div className="p-4 pt-0">
+      //         <SystemInstruction prompt={messageStore.systemInstruction} onClear={() => initAssistant('')} />
+      //       </div>
+      //     ) : null}
           {messageStore.messages.map((msg, idx) => (
             <div
               className="group text-slate-500 transition-colors last:text-slate-800 hover:text-slate-800 dark:last:text-slate-400 dark:hover:text-slate-400 max-sm:hover:bg-transparent"
