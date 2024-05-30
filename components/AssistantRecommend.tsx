@@ -63,12 +63,12 @@ function AssistantRecommend({ initAssistant }: Props) {
             <RefreshCcw className="h-5 w-5" />
           </Button>
         </div>
-        {recommendation.length === 0 ? (
+        {/* {recommendation.length === 0 ? (
           <div className="grid grid-cols-2 grid-rows-2 gap-2 max-sm:grid-cols-1">
-            {/* <CardSkeleton />
             <CardSkeleton />
             <CardSkeleton />
-            <CardSkeleton /> */}
+            <CardSkeleton />
+            <CardSkeleton />
           </div>
         ) : (
           <div className="grid grid-cols-2 grid-rows-2 gap-2 text-left text-gray-600 max-sm:grid-cols-1">
@@ -95,7 +95,7 @@ function AssistantRecommend({ initAssistant }: Props) {
               )
             })}
           </div>
-        )}
+        )} */}
         <div
           className="cursor-pointer pt-3 text-center underline-offset-4 hover:underline"
           onClick={() => setAssistantMarketOpen(true)}
