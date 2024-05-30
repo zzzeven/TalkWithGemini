@@ -48,7 +48,7 @@ function AssistantRecommend({ initAssistant }: Props) {
   )
 
   return (
-    <div className="flex grow items-center justify-center p-4 text-sm">
+    <div className="flex grow items-center justify-center p-4 text-sm text-white">
       <section className="-mt-20 w-full max-sm:mt-0">
         <div className="my-3 flex justify-between">
           <h3 className="text-base font-medium">{t('assistantRecommend')}</h3>
@@ -65,10 +65,10 @@ function AssistantRecommend({ initAssistant }: Props) {
         </div>
         {recommendation.length === 0 ? (
           <div className="grid grid-cols-2 grid-rows-2 gap-2 max-sm:grid-cols-1">
+            {/* <CardSkeleton />
             <CardSkeleton />
             <CardSkeleton />
-            <CardSkeleton />
-            <CardSkeleton />
+            <CardSkeleton /> */}
           </div>
         ) : (
           <div className="grid grid-cols-2 grid-rows-2 gap-2 text-left text-gray-600 max-sm:grid-cols-1">
