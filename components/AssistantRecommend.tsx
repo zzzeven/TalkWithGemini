@@ -48,7 +48,7 @@ function AssistantRecommend({ initAssistant }: Props) {
   )
 
   return (
-    <div className="flex grow items-center justify-center p-4 text-sm" style="display:none;">
+    <div className="flex grow items-center justify-center p-4 text-sm">
       <section className="-mt-20 w-full max-sm:mt-0">
         <div className="my-3 flex justify-between">
           <h3 className="text-base font-medium">{t('assistantRecommend')}</h3>
